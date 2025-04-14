@@ -1,0 +1,84 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  color: #4091ca;
+  line-height: 1.6;
+  background-color: #c1c5c9;
+  padding: 20px;
+}
+
+.header {
+  text-align: center;
+  background-color: #000000;
+  color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.header h1 {
+  font-size: 2.5em;
+}
+
+.header p {
+  font-size: 1.2em;
+  margin-top: 10px;
+}
+
+.header a {
+  display: inline-block;
+  background-color: #00bcd4;
+  color: black;
+  padding: 10px 20px;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+  margin-top: 15px;
+}
+
+.header a:hover {
+  background-color: #0097a7;
+}
+
+.hero {
+  text-align: center;
+}
+.list {
+  color: purple;
+}
+.JokeGenerator {
+  color: #1d0db2;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+}
+
+.section {
+  background-color: #e1f5fe;
+  padding: 20px;
+  margin-top: 30px;
+  border-radius: 8px;
+}
+
+.section h2 {
+  font-size: 1.8em;
+  margin-bottom: 10px;
+  color: #000;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-top: 15px;
+}
+
+.video-container iframe {
+  width: 100%;
+  height: 315px;
+  border-radius: 8px;
+  margin-top: 20px;
+}

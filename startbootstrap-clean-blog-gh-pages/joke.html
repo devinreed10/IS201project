@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Running Joke Generator</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8bbd0; /* Light pink background */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .container {
+            text-align: center;
+            background-color: #fff;
+            border-radius: 10px;
+            padding: 30px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            max-width: 400px;
+            width: 100%;
+        }
+
+        h1 {
+            color: #00bcd4;
+        }
+
+        p {
+            font-size: 18px;
+            color: #333;
+            margin: 20px 0;
+        }
+
+        button {
+            background-color: #00bcd4;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background-color: #0097a7;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Running Joke Generator</h1>
+        <p id="joke">Click the button below for a running joke!</p>
+        <button onclick="getJoke()">Get a Joke</button>
+    </div>
+
+    <script>
+        const jokes = [
+            "Why did the runner bring a ladder to the race? Because they wanted to take their performance to the next level!",
+            "Why do runners never get lost? Because they always know the 'track' they're on!",
+            "What’s a runner’s favorite type of music? Anything with a good 'beat'!",
+            "Why did the runner break up with their sneakers? They felt they were always being 'stretched' too much!",
+            "What do you call a fast runner? A 'speedster'!",
+            "Why did the marathoner bring a pencil to the race? Because they wanted to 'draw' attention!",
+            "I’m not a great runner, but I’m pretty good at jogging people's memories with bad jokes!"  
+        ];
+
+        function getJoke() {
+            const randomIndex = Math.floor(Math.random() * jokes.length);
+            const joke = jokes[randomIndex];
+            document.getElementById('joke').textContent = joke;
+        }
+    </script>
+
+</body>
+</html>
